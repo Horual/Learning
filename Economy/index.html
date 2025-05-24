@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Contrôle de dépenses</title>
+</head>
+<body>
+    <form>
+        <div class="container" onchange="validateFields()">
+            <div>
+                <div>
+                    <label>
+                        Email
+                    </label>
+                </div>
+                <input type="email" name="email" id="email" placeholder="votre@email.com" required/>
+                <div class="error" id="msgEmail">msg</div>
+            </div>
+            <div>
+                <div>
+                    <label>
+                        Mot de passe
+                    </label>
+                </div>
+                <input type="password" name="password" id="password" placeholder="Mot de passe" required/>
+                <div class="error" id="msgPassword">msg</div>
+            </div>
+            <div>
+                <button type="button" class="clear" id="recover-password-button" disabled="true">Mot de passe oublié</button>
+            </div>
+            <div>
+                <button type="button" class="solid" id="login-button"disabled="true">Se connecter</button>
+            </div>
+            <div>
+                <button type="button" class="outline" id="sign-up-button"disabled="true">Créer un compte</button>
+            </div>
+        </div>
+    </form>
+</body>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<script src="validation.js"></script>
+</html>
